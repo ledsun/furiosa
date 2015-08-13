@@ -1,0 +1,37 @@
+{
+  "name": "furiosa",
+  "description": "Show a list of actions in applications that is made using action-stream.",
+  "version": "0.0.1",
+  "author": "shigeru.nakajima@gmail.com",
+  "bin": {
+    "furiosa": "./bin/cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/ledsun/furiosa/issues"
+  },
+  "dependencies": {
+    "core-js": "^1.1.1",
+    "esprima": "^2.5.0",
+    "node-dir": "^0.1.8",
+    "split": "^1.0.0",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21"
+  },
+  "homepage": "https://github.com/ledsun/furiosa",
+  "keywords": [
+    "action-stream"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ledsun/furiosa.git"
+  },
+  "scripts": {
+    "build": "make",
+    "start": "babel-node lib/index.js",
+    "test": "npm start ~/graph-editor/lib/stream"
+  }
+}
